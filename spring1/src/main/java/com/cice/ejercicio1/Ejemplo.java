@@ -1,5 +1,8 @@
 package com.cice.ejercicio1;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Ejemplo implements EjemploI {
 
 	@Override
