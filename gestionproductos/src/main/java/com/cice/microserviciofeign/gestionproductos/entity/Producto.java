@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name="productos")
+@Table(name= "productos")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -16,10 +16,17 @@ public class Producto {
     @GeneratedValue
     @Column(name ="id")
     private Long id;
+
     @Column(name = "idUsuario")
     private Long idUsuario;
-    @Column(name ="descripcion")
-    private String descripcion;
+
+    @Column(name ="nombre")
+    private String nombre;
+
+    @Column (name = "codigo")
+    private String codigo;
+
     @Column(name ="precio")
     private Double precio;
+
 }
